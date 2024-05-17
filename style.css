@@ -1,0 +1,33 @@
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+button{
+    background-color: rgb(14, 5, 142);
+    color: aliceblue;
+    padding: 10px 20px;
+} 
+label{
+    color :black
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+input{
+   background-color:rgb(245, 226, 242);
+   border-color:rgb(252, 158, 205);
+}
+h1{
+    color:rgb(3, 3, 118);
+    background-color:rgb(245, 226, 242);
+}
+select{
+    background-color:rgb(245, 226, 242) ;
+    border-color:rgb(252, 158, 205);
+}
+textarea{
+    background-color:rgb(245, 226, 242) ;
+    border-color:rgb(252, 158, 205);
+}
