@@ -1,0 +1,7 @@
+
+- Delete all existing files
+- Create a registration page using html
+  - we did this in previous exercises
+- Submit it to a PHP page
+- Display form information just like we did it in verify-login.php
+- upload screenshot
