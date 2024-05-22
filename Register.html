@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        button
+        {
+            background-color: brown;
+            color:aliceblue;
+        }
+        h2{
+            color: brown;
+        }
+        h4{
+            color: black;
+        }
+    </style>
+    <script>
+        function validate()
+        {
+          var name = document.getElementById('Name');
+          var DOB = document.getElementById('DOB');
+          if(name.value==""||DOB.value=="")
+          {
+            alert("Enter your details correctly");
+          }
+          else
+          {
+                alert("Registration Successful");
+          }
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+    <label><b>Name:</b></label>
+    <input name="name" placeholder="Enter your name" id="Name" type="text">
+    <br/>
+    <br/>
+    <label><b>Gender:</b></label>
+    <input type="radio" id="gender">Male
+    <input type="radio" id="gender">Female
+    <br/>
+    <br/>
+    <label><b>Contact:</b></label>
+    <input type="tel" name="Contact" placeholder="1234-567-890">
+    <br/>
+    <br/>
+    <label><b>DOB:</b></label>
+    <input name="date" id="date" type="date">
+    <br/>
+    <br/>
+    <label><b>Email:</b></label>
+    <input type="email" placeholder="Enter your email address" id="email" autocomplete="off">
+    <br/>
+    <br/>
+    <label><b>City:</b></label>
+    <input name="city" id="city" type="text">
+    <br/>
+    <br/>
+    <label><b>Country:</b></label>
+    <input name="Country" id="Country" type="text">
+    <br/>
+    <br/>
+    <label><b>Educational Qualifications:</b></label>
+    <table bgcolor="lightgrey"  border="1" width="900" height="200">
+        <tr>
+            <th><h4>S.no</h4></th>
+            <th><h4>Examination</h4></th>
+            <th><h4>School/College</h4></th>
+            <th><h4>Percentage</h4></th>
+            <th><h4>Year of Passing</h4></th>
+        </tr>
+        <tr>
+         <td><h4>1.</h4></td>
+         <td><h4>X</h4></td>
+         <td><textarea rows="3" cols="50"></textarea></td>
+         <td><input type="text"></td>
+         <td><input type="text"></td>
+        </tr> 
+       <tr>
+        <td><h4>2.</h4></td>
+        <td><h4>Intermediate</h4></td>
+        <td><textarea rows="3" cols="50"></textarea></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+       </tr>
+       <tr>
+        <td><h4>3.</h4></td>
+        <td><h4>Graduation</h4></td>
+        <td><textarea rows="3" cols="50"></textarea></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+       </tr>
+     </table>
+    
+
+    <label><b>Hobbies:</b></label>
+    <br/>
+    <input type="checkbox" id="hobbies">Reading
+    <br/>
+    <input type="checkbox" id="hobbies">Singing
+    <br/>
+    <input type="checkbox" id="hobbies">Dancing
+    <br/>
+    <input type="checkbox" id="hobbies">Eating
+    <br/>
+    <input type="checkbox" id="hobbies">Sleeping
+    <br/>
+    <br/>
+    <button onclick="validate()">Submit</button>
+    <br/>
+    <a href="/forgot password">Forgot password?</a>
+    </br>
+    <label><strong>Remember me</strong></label>
+    <input type="checkbox" name="name">
+    <label>Already a member?</label>
+    <a href="#">Login</a>
+    </form>
+
+
+
+    
+</body>
+</html>
