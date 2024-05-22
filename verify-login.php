@@ -1,5 +1,5 @@
 <?php
- echo "your submitted this information for login";
+ echo 'your submitted this information for login';
 
  echo "<br/>";
   
