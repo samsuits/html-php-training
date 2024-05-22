@@ -1,6 +1,6 @@
 <?php
 
-echo "you have registered successfully!!";
+echo "YOU HAVE REGISTERED SUCCESSFULLY!!";
 echo "<br/>";
 echo "<br/>";
 echo "Submitted Information:";
