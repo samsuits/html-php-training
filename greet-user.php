@@ -1,11 +1,10 @@
 <?php
 
-if (isset($_GET['name']))
+if (isset($_GET['submit']))
 {
     echo 'Hello ' .  $_GET['name'];
     echo '<br/><hr/>';
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
