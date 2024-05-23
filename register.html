@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 20px;
+            margin: 30px 130px 0px 150px;
+            border: 4px solid rgba(0, 0, 0, 0.937);
+            padding-left: 50px;
+        }
+
+        form {
+            margin-left: -50px;
+            background: linear-gradient(135deg, rgba(185, 126, 233, 0.937), rgba(63, 5, 85, 0.937));
+            padding-left: 30px;
+
+        }
+
+        .input_elements {
+            width: 400px;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: inset;
+        }
+
+        h1 {
+            margin: 0px 0px 0px -50px;
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+
+        button {
+            margin-left: 400px;
+            height: 45px;
+            width: 110px;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+    <form  action="verify.php" method="post">
+        Name:
+        </br> <input class="input_elements" type="text" name="username" placeholder="Enter your full name"
+            id="username">
+        </br>
+        </br>
+        DOB: </br> <input class="input_elements" type="date" name="DOB" id="DOB">
+        </br>
+        </br>
+        Contact Number: </br> <input class="input_elements" type="number" name="number" id="contact_number">
+        </br>
+        </br>
+        Email:</br> <input class="input_elements" type="text" name="email" id="email">
+        </br>
+        </br>
+        Gender:<input type="radio" name="gender" id="gender">Male
+        <input type="radio" name="gender" id="gender">Female
+        </br>
+        </br>
+        Education: <select class="input_elements" id="education" name="education">
+            <option disabled selected value> select an option </option>
+            <option value="B.Tech">Graduate</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Post Graduate">Post Graduate</option>
+            <option value="Higher education">Higher education</option>
+        </select>
+        </br>
+        </br>
+        City:
+        </br> <input class="input_elements" type="text" id="city" name="city">
+        </br>
+        </br>
+        Country: <select id="country" name="country">
+            <option disabled selected value>Select a country</option>
+            <option value="AF">India</option>
+            <option value="AF">Afghanistan</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+            <option value="AF">America</option>
+        </select>
+        </br>
+        </br>
+        Remember me <input type="checkbox">
+        </br>
+        </br>
+        <input type="submit">
+    </form>
+</body>
+</html>
