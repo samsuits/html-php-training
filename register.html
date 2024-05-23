@@ -48,7 +48,7 @@
 <body>
 
     <h1 style="text-align: center;">REGISTRATION FORM</h1>
-    <form  action="verify.php" method="post">
+    <form action="verify.php" method="post">
         Name:
         </br> <input class="input_elements" type="text" name="username" placeholder="Enter your full name"
             id="username">
@@ -63,8 +63,8 @@
         Email:</br> <input class="input_elements" type="text" name="email" id="email">
         </br>
         </br>
-        Gender:<input type="radio" name="gender" id="gender" value="male">Male
-        <input type="radio" name="gender" id="gender" value="female">Female
+        Gender:<input type="radio" name="gender" id="gender_male" value="male">Male
+        <input type="radio" name="gender" id="gender_female" value="female">Female
         </br>
         </br>
         Education: <select class="input_elements" id="education" name="education">
@@ -74,6 +74,15 @@
             <option value="Post Graduate">Post Graduate</option>
             <option value="Higher education">Higher education</option>
         </select>
+        </br>
+        </br>
+        Hobbies:<input type="checkbox" name="hobbies[]" id="hobbies_reading" value="reading">Reading
+        <input type="checkbox" name="hobbies[]" id="hobbies_music" value="music">Music
+        <input type="checkbox" name="hobbies[]" id="hobbies_travelling" value="travelling">Travelling
+        <br />
+        <br />
+        Do you have passport ? <input type="checkbox" name="passport" id="checkbox_passport" value="yes">
+
         </br>
         </br>
         City:
@@ -91,10 +100,13 @@
         </select>
         </br>
         </br>
-        Remember me <input type="checkbox">
+        About me:
+        <textarea name="about_me" cols="30" rows="5">
+        </textarea>
         </br>
         </br>
         <input type="submit">
     </form>
 </body>
+
 </html>
