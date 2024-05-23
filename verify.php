@@ -1,21 +1,19 @@
 <?php
 echo '<h1>your  submitted this information for registration</h1>';
 echo '<br/>';
-echo 'Full name :' .$_post['full name'];
+echo 'Full name :' .$_POST['fullname'];
 echo '<br/>';
-echo 'Email :' .$_post['email'];
+echo 'Email :' .$_POST['email'];
 echo '<br/>';
-echo 'Password :' .$_post['password'];
+echo 'Password :' .$_POST['password'];
 echo '<br/>';
-echo 'Contact number :' .$_post['contact number'];
+echo 'Contact number :' .$_POST['contactnumber'];
 echo '<br/>';
-echo 'Gender:' .$_post['gender'];
+echo 'Gender:' .$_POST['gender'];
 echo '<br/>';
-echo 'Date Of Birth:' .$_post['dob'];
+echo 'Date Of Birth:' .$_POST['dob'];
 echo '<br/>';
-echo 'Known Languages :' .$_post['known languages'];
-echo '<br/>';
-echo 'Address :' .$_post['address'];
+echo 'Address :' .$_POST['address'];
 echo '<br/>';
 
 ?>
