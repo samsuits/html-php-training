@@ -8,6 +8,8 @@
 <body>
     <h1>Calculator</h1>
     <?php
+        $num1 = '';
+        $num2 = '';
         if (isset($_POST['submit']))
         {
             $num1 = $_POST['num1'];
@@ -45,10 +47,10 @@
         }
     ?>
     <form action="" method="post">
-        <input type="text" name="num1" placeholder="Enter first number">
+        <input type="text" autocomplete="off" name="num1" placeholder="Enter first number" value="<?php echo $num1 ?>">
         <br/>
         <br/>
-        <input type="text" name="num2" placeholder="Enter second number">
+        <input type="text" autocomplete="off" name="num2" placeholder="Enter second number" value="<?php echo $num2 ?>">
         <br/>
         <br/>
         Operation: <select name="operation">
