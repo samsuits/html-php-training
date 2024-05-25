@@ -23,7 +23,21 @@ echo '</br>';
 echo 'Country:' . $_POST['Country'];
 echo '</br>';
 echo '</br>';
-echo 'Hobbies:' . $_POST['hobbies'];
+echo 'Education:' . $_POST['edu'];
+echo '</br>';
+echo '</br>';
+echo 'Hobbies:' ;
+
+if (isset($_POST['hobbies']))
+{
+   echo implode(', ', $_POST['hobbies']);
+}
+else
+{
+   echo 'n/a';
+}
+
+
 
 
 ?>
