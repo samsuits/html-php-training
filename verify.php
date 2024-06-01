@@ -14,6 +14,7 @@ echo "<br/>";
 echo "<br/>";
 echo 'Depatment of the user :' . $_POST["department"];
 echo "<br/>";
+echo 'Address of the user :' . $_POST["address"];
 echo "<br/>";
 echo 'DOB:' . $_POST["dob"];
 echo "<br/>";
