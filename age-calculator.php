@@ -8,7 +8,7 @@
     $age=date_diff(date_create($dob),date_create($current));
 
     echo  "your age is:" .$age->y;
-
+  echo "<br/>";
     
   }
    ?>
