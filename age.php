@@ -1,12 +1,11 @@
 <?php
-
-if($_SERVER["REQUEST_METHOD"]=="POST")
+$age=0;
+if (isset($_POST["submit"]))
 {
     $dateofbirth=$_POST["dob"];
-    $currentdate=$_POST["current"];
-    $age=date_diff(date_create($dateofbirth),date_create($currentdate))->y;
-
-    echo "YOUR ARE " . $age . " YERAS OLD.";
+    $currentdate=date('Y-m-d');
+    $age = date_diff(date_create($dateofbirth),date_create($currentdate))->y;
 }
+    echo "YOU ARE " . $age . " YEARS OLD.";
 
-?>
+?> 
