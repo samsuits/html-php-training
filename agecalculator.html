@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px solid green;
+            background-color: rgb(193, 229, 193);
+            width: 300px;
+            display: block;
+            box-shadow: inset;
+            padding-bottom: 20px;
+        }
+
+        p {
+            color: rgb(29, 0, 250);
+            font-size: large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #dob {
+            border: 2px solid black;
+            padding: 12px;
+            font-size: 20px;
+        }
+
+        #submit {
+            padding: 0 10px 0 10px;
+            font-size: 20px;
+            background-color: rgb(29, 0, 250);
+            border: 2px solid rgb(29, 0, 250);
+            color: white;
+        }
+        #submit:hover{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+         
+        
+    <center>
+        <form action="age.php" method="POST">
+            <h1>Age Revealer</h1>
+            <div class="container">
+                <p>Enter your Date of Birth</p>
+                <input type="date" name="dob" id="dob" required><br><br>
+                <input type="submit" name="calculate" id="submit">
+                <p> 
+                </p>
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>
