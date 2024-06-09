@@ -5,33 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <style>
+        body{
+          font-family:'Times New Roman', Times, serif
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background-color: aliceblue;
+        }
+        .quiz-box{
+            background-color: rgb(153, 221, 245);
+            padding: 50;
+            border-radius: 5;
+            box-shadow: 0 2px 5px rgba(0 1 1);
+        }
+        button{
+            border-radius: 3px;
+            background-color: rgb(120, 179, 247);
+            color:white;
+            padding: 5px ;
+            border: none;
+            cursor:progress;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
         form{
-           
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
         }
-        label{
-            font-size: larger;
-           font-weight: 600;
+        input[type="radio"]{
+            margin-right: 15px;
         }
+        
     </style>
 </head>
 <body>
+    <div class="quiz-box">
     <h1> WELCOME TO QUIZ 2024!</h1>
-    <form action="quizz.php" method="post" id="quiz">
+
+    <form action="quizz.php" method="post">
         
-        <label for="firstPerson">Who is the first person of India?</label><br/>
-        <br>
-        <input type="radio" name="firstPerson">Prime minister
-        <br/>
-        <input type="radio" name="firstPerson">President
-        <br/>
-        <input type="radio" name="firstPerson">Ancient people
-        <br/>
-        <input type="radio" name="firstPerson">Monkey
-        <br>
-        <br>
-        <button type="submit">Submit</button>
+        <p>Who is the first person of India?</p>
+    <label for="president"><input type="radio" name="answer" id="president" value="president">President</label>
+    <br>
+    <label for="prime minister"><input type="radio" name="answer" id="prime minister" value="prime minister">Prime Minister</label>
+    <br>
+    <label for="ancient people"><input type="radio" name="answer" id="ancient people" value="ancient people">Ancient People</label>
+    <br>
+    <label for="none"><input type="radio" name="answer" id="none" value="none">None of the above</label>
+    <br>
+    <button type="submit" name="submit">Submit quiz</button>
     
     </form>
+    </div>
     
 </body>
 </html>
