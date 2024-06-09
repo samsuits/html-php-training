@@ -16,14 +16,4 @@ function getTodaysDate()
     return date('d-m-y');
 }
 
-function diffBetweenTwoDates($date1, $date2)
-{
-    //
-    //logic to find difference
-    //
-    //
-
-    return $diff;
-}
-
 
