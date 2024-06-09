@@ -1,9 +1,12 @@
 <?php
 
+include 'functions.php';
+
+echo 'Today is : '. getTodaysDate();
+
 if (isset($_GET['submit']))
 {
-    echo 'Hello ' .  $_GET['name'];
-    echo '<br/><hr/>';
+   greetUser($_GET['name']);
 }
 ?>
 <!DOCTYPE html>

@@ -8,27 +8,23 @@
 <body>
     <h1>Calculator</h1>
     <?php
+    include 'functions.php';
+
         $num1 = '';
         $num2 = '';
         if (isset($_POST['submit']))
         {
-            foreach($_POST as $key => $value)
-            {
-                echo $key . '=>' . $value;
-                echo '<br/>';
-                echo '<br/>';
-            }
-            /*
+
             $num1 = $_POST['num1'];
             $num2 = $_POST['num2'];
 
             $operation = $_POST['operation'];
-            echo '<b>';
+
 
             switch ($operation)
             {
                 case 'add' :
-                    echo $num1 + $num2;
+                    SumOfTwoNumber($num1, $num2);
                     break;
 
                 case 'sub' :
@@ -47,11 +43,6 @@
                     echo 'Error';
             }
 
-            echo '</b>';
-
-            echo '<br/>';
-            echo '<br/>';
-            */
         }
     ?>
     <form action="" method="post">
