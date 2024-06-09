@@ -6,7 +6,7 @@ echo 'Today is : '. getTodaysDate();
 
 if (isset($_GET['submit']))
 {
-   greetUser($_GET['name']);
+    greet_user($_GET['name']);
 }
 ?>
 <!DOCTYPE html>
