@@ -1,5 +1,7 @@
 // excercise
 
+// databse - login_system
+
 create table name students
 columns
 id
@@ -8,3 +10,7 @@ gender
 semester
 mobile
 address
+
+// create html page to insert this into database
+
+// create page to retrieve and display
