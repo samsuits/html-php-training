@@ -3,6 +3,7 @@
 include 'functions.php';
 
 echo 'Today is : '. getTodaysDate();
+echo '<br/>';
 
 if (isset($_GET['submit']))
 {

@@ -1,0 +1,10 @@
+// excercise
+
+create table name students
+columns
+id
+name
+gender
+semester
+mobile
+address
