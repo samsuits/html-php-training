@@ -19,7 +19,7 @@ $result = $conn->query($sql);
 if ($result == true)
 {
     echo 'New user created';
-    echo '<br/><a href="reg1.html">Click here to register</a>';
+    echo '<br/><a href="login.html">Click here to login</a>';
 
 }
 else
