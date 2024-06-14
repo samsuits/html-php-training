@@ -2,7 +2,6 @@
 
 // connection establishment
 include 'db-connection.php';
-$Id = $_POST['id'];
 $Name = $_POST['name'];
 $Gender = $_POST['gender'];
 $Semester = $_POST['semester'];
