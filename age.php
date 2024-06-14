@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="style.css">
     </head>
 <body>
+    <div style=text-align:center;>
     <form action="" method="POST">
     <h1>Age Calculator</h1>
     <label>BirthDate</label>
@@ -31,6 +32,7 @@
     </br>
     <input type="submit" name="submit" value="Calculate My Age">
     <input type="text" value="<?php echo"Age is: ", $_age->format("%y")?>" readonly>
+    </div>
     </form>
 </body>
 </html>
