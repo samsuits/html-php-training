@@ -3,18 +3,21 @@
 include 'db-connection.php';
 
 echo '<h1>Submitted values</h1>';
-echo 'email is : ' . $_POST['email'];
+echo 'name is: ' . $_POST['name'];
 echo "<br/>";
-echo 'password is : ' . $_POST['password'];
-
-echo "<br/>";
+echo 'semester is: ' . $_POST['semester'];
 echo "<br/>";
 
-$email = $_POST['email'];
-$password = $_POST['password'];
 
 
-$query = "SELECT * FROM user WHERE username ='username' AND password ='password';";
+echo "<br/>";
+echo "<br/>";
+
+$name = $_POST['name'];
+$semester = $_POST['semester'];
+
+
+$query = "SELECT * FROM student_login WHERE name ='$name' AND semester ='$semester';";
 
 
 $result = $conn->query($query);
@@ -26,5 +29,5 @@ if ($result->num_rows > 0)
 }
 else
 {
-    echo 'incorrect email or password';
+    echo 'incorrect details';
 }

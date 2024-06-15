@@ -7,7 +7,7 @@
 </head>
      <style>
        .myClass{
-            background-color: aquamarine;
+            background-color:white;
             text-align: center;
             height: 400px;
             width: 400px;
@@ -16,18 +16,14 @@
             margin-top: 150px;
        }
        input[type='button']{
-        background-color: black;
+        background-color: orange;
         color: white;
        }
      </style>
-    <body bgcolor="azure">
+    <body bgcolor="aquamarine">
     <form action="reg.php" method="post">
     <div class="myClass">
         <h1><b>Student Registration Form</b></h1>
-        <label>Id:</label>
-        <input type="number" name="id">
-        </br>
-        </br>
         <label>Name:</label>
         <input type="text" name="name" placeholder="Enter your name">
         </br>
@@ -38,7 +34,7 @@
         </br>
         </br>
         <label>Semester:</label>
-        <select>
+        <select name="semester">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -58,7 +54,7 @@
         <input type="text" name="address">
         </br>
         </br>
-        <input type="button" value="Submit">
+        <input type="submit" value="Submit">
     </div>
 </form>
 </body>
