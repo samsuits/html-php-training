@@ -1,4 +1,21 @@
 <?php
-   echo $_POST[firstname]
-   echo $_POST[lastname]
+ echo "YOU HAVE REGISTERED SUCCESSFULLY!!";
+ echo "<br/>";
+ echo "<br/>";
+ echo "Submitted Information:";
+ echo "<br/>";
+ echo "<br/>";
+ echo 'Name of the user' . $_POST["username"];
+ echo "<br/>";
+ echo "<br/>";
+ echo 'Password is ' . $_POST["password"];
+ echo "<br/>";
+ echo "<br/>";
+ echo 'Depatment of the user :' . $_POST["department"];
+ echo "<br/>";
+ echo "<br/>";
+ echo 'DOB:' . $_POST["dob"];
+ echo "<br/>";
+ echo "<br/>";
+ echo 'Phone :' . $_POST["phone"];
    ?>
