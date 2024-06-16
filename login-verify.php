@@ -5,15 +5,14 @@ include 'db-connection.php';
 echo '<h1>Subbmited values</h1>';
 echo 'Name is : ' . $_POST['name'];
 echo "<br/>";
-echo 'semeste is : ' . $_POST['semester'];
-
-echo "<br/>";
+echo 'Mobileno is : ' . $_POST['mobileno'];
 echo "<br/>";
 
 $name = $_POST['name'];
-$password = $_POST['semester'];
+$mobileNo=$_POST['mobileno'];
 
-$query = "SELECT * FROM user WHERE name = '" . $name . "' AND semester = '" . $semester . "';";
+
+$query = "SELECT * FROM students WHERE name = '$name' AND mobileno = ' $mobileNo';";
 
 $result = $conn->query($query);
 
@@ -24,5 +23,5 @@ if ($result->num_rows > 0)
 }
 else
 {
-    echo 'incorrect email or password';
+    echo 'incorrect name and phonenumber';
 }

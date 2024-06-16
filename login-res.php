@@ -7,7 +7,7 @@ $semester=$_POST['semester'];
 $mobileNo=$_POST['mobileno'];
 $address=$_POST['address'];
 
-$sql="INSERT INTO `students` ( `name`, `gender`, `semester`, `mobileno`, `address`) VALUES ( '$name', '$gender', '$semester', '$mobileNo', '$address');";
+$sql="INSERT INTO `students` ( `name`, `gender`, `semester`, `mobileno`, `address`) VALUES ( '$name','$gender', '$semester', '$mobileno', '$address');";
 
 
         $result=$conn->query($sql);
