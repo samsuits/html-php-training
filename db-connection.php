@@ -3,8 +3,9 @@
 $hostname = 'localhost';
 $user     = 'root';
 $password = '';
+$database = 'login';
 
-$conn = mysqli_connect($hostname, $user, $password);
+$conn = mysqli_connect($hostname, $user, $password, $database);
 
 if ($conn)
 {
