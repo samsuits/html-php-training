@@ -1,0 +1,32 @@
+insert, select, edit, delete
+
+// sindhu
+table: hotel
+fields: id, hotel_name, address, city, state, mobile
+
+//siddu
+table: room
+fields: id, room_name, bed_type, ac, price
+
+// sahithya
+table: booking
+fields: id, booking_date, guest_name, guest_email, guest_mobile, nof_of_people
+
+// ushasri
+table: packages
+fields: id, package_name, package_price, package_start_date, package_end_date
+
+// ramya
+table: coupons
+fields: id, coupon_code, expiry_date, coupon_discount_value
+
+//shivani
+table: payments
+fields: id, payment_date, guest_name, payment_type, amount
+//extra_info: paymen_type : cash, card, UPI
+
+
+//extra excerise
+read about cookies and session
+
+
