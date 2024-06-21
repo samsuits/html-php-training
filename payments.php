@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 
 if ($result == true)
 {
-    echo '<h2>payment details successful</h2>';
+    echo '<h2> new payment details </h2>';
 
 }
 else
