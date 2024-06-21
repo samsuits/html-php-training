@@ -9,9 +9,11 @@ $conn = mysqli_connect($hostname, $user, $password, $database);
 
 if ($conn)
 {
-    echo ' Registered Successfully';
+    echo 'Connection Success!';
+    echo  '</br>';
 }
+
 else
 {
-    echo 'Please Try again!';
+    echo 'failed';
 }
