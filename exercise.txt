@@ -3,7 +3,8 @@
 // for all
 use cookie to maintain user name and show the database retrieval only after login
 
-
+// additional excerise
+design a home page with navgition and links
 
 
 // sindhu
