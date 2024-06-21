@@ -3,15 +3,15 @@
 $hostname = 'localhost';
 $user     = 'root';
 $password = '';
-$database = 'login';
+$database = 'users';
 
 $conn = mysqli_connect($hostname, $user, $password, $database);
 
 if ($conn)
 {
-    echo 'Success';
+    echo ' Registered Successfully';
 }
 else
 {
-    echo 'failed';
+    echo 'Please Try again!';
 }

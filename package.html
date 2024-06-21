@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<style>
+    .package{
+        height: 300px;
+        width:  300px;
+        text-align: center;
+        margin: auto;
+        margin-top: 150px;
+        padding: 15px; 
+        border: 2px solid black;
+        background-color:blueviolet ;
+    }
+</style>
+<body bgcolor="blueviolet">
+    <form action="packages-registered.php" method="post">
+    <div class="package">
+        <h1>Package Details</h1>
+    <b><label>package name:</label></b>
+    <input type="text" name="name" required>
+    </br>
+    </br>
+    <b><label>package price:</label></b>
+    <input type="text" name="price" required>
+    </br>
+    </br>
+    <b><label>start_date:</label></b>
+    <input type="date" name="start" required>
+    </br> 
+    </br>
+    <b><label>end_date:</label></b>
+    <input type="date" name="end" required>
+    </br>
+    </br>
+    <input type="submit" name="submit">
+    </div>
+    </form>
+</body>
+</html>

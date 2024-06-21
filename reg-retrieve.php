@@ -22,6 +22,8 @@ $results = $conn->query($sql);
             <th>semester</th>
             <th>mobile</th>
             <th>address</th>
+            <th>edit</th>
+            <th>delete</th>
         </tr>
 
 
@@ -35,6 +37,8 @@ $results = $conn->query($sql);
             echo '<td>' . $result['semester'] . '</td>';
             echo '<td>' . $result['mobile'] . '</td>';
             echo '<td>' . $result['address'] . '</td>';
+            echo '<td><a href="#">Edit</a></td>';
+            echo '<td><a href="#">Delete</a></td>';
             echo '</tr>';
         }
 
