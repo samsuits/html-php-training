@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+</head>
+<style>
+  body  {
+  background-image: url("bg.webp");
+  background-repeat: no-repeat;
+  background-size: 1600px 800px;
+}
+      .myclass1{
+            
+            text-align: center;
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 150px;
+       }
+       
+       input[type='submit']{
+        background-color:black;
+        color: white;
+       }
+</style>
+<body bgcolor="lavenderblush">
+    <form action="payments.php" method="post">
+     <div class="myclass1">
+       <h1>USERS PAYMENTS</h1>
+         <label>Payment_date :</label>
+                    <input type="date" name="payment_date"></br></br>
+        <label>  Guest_name :</label>
+          <input type="text" name="guest_name"></br></br>
+          <label>Payment_method:</label>
+          <input type="radio" name="payment_method">Credit/ Debit/ ATM Card</br>
+          <input type="radio" name="payment_method">  Cash On Delivery</br>
+          <input type="radio" name="payment_method">  Net Banking</br>
+          <input type="radio" name="payment_method">  Wallets</br>
+             <input type="radio" name="payment_method">UPI</br></br>
+          
+          <label>Amount:</label>
+          <input type="text" name="amount"></br></br>
+          <input type="submit" value="Submit">
+      </div>
+    </form>
+</body>
+</html>
