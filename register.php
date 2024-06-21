@@ -8,8 +8,9 @@ $confirm_password = $_POST['confirm_password'];
 if ($password != $confirm_password)
 {
     echo 'Passwords do not match. Please try again.';
-    echo '<br/>';
-    echo '<a href="registration.html">Try again</a>';
+    echo '<br/><br/>';
+    echo '<a href="registration.html">Try again</a><br/>';
+    exit(0);
 }
 
 $name   = $_POST['name'];
