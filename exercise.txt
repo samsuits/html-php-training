@@ -1,4 +1,10 @@
-insert, select, edit, delete
+
+// excerise for 21st jun
+// for all
+use cookie to maintain user name and show the database retrieval only after login
+
+
+
 
 // sindhu
 table: hotel
@@ -28,5 +34,7 @@ fields: id, payment_date, guest_name, payment_type, amount
 
 //extra excerise
 read about cookies and session
+
+
 
 

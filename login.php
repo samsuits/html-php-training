@@ -17,7 +17,9 @@ if($result->num_rows > 0)
     if (password_verify($password, $user['password']))
     {
         echo 'Login success!!';
-        echo '<br/>Welcome';
+        echo '<br/>Welcome<br/>';
+        setcookie('user', $email, time() + 3600);
+        echo '<a href="index.php">Home</a><br/>';
     }
     else
     {
