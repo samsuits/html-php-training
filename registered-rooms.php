@@ -1,5 +1,13 @@
 <?php
+
+if(!isset($_COOKIE['user']))
+{
+  echo 'please login before accessing users page';
+  echo '<a href="login.html">Login</a>';
+  exit(0);
+}
 include 'db-connection.php';
+
 $sql = 'select * from room';
 $result = $conn->query($sql);
 ?>

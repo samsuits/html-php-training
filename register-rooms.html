@@ -12,20 +12,29 @@
     <H1>REGISTER</H1>
     <form action="room-registration.php" method="POST">
 
-        ID:
-        <input type="number" name="id" required>
-        <br>
-        </br>
         ROOM NAME:
-        <input type="text" name="room_name" required>
+        <select name="room_name">
+            <option value="single room">single room</option>
+            <option value="standard double room">standard double room</option>
+            <option value="deluxe room">deluxe room</option>
+        </select>
+        
         <br>
         </br>
         BED TYPE:
-        <input type="text" name="bed_type">
+        <select name="bed_type">
+            <option value="Twin room">Twin room</option>
+            <option value="junior suite">junior suite</option>
+            <option value="king sized">king room</option>
+            <option value="queen sized">queen room</option>
+        </select>
         <br>
         </br>
-        AC:
-        <input type="text" name="ac_type" >
+        AC TYPE:
+        <select name="ac_type">
+            <option value="AC ">AC</option>
+            <option value="NON AC">NON AC</option>
+            </select>
         <br>
         </br>
         PRICE:
@@ -34,6 +43,5 @@
         </br>
         <input type="submit" name="submit">
     </form>
-</form>
 </body>
 </html>
