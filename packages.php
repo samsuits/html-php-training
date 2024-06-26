@@ -11,7 +11,7 @@ $end_date      = $_POST['end'];
 
 $sql = "INSERT INTO 
         packages
-        (package_name,package_price,start_date,end_date)
+        (package_name,package_price,start_date,end_date,email,password)
          VALUES ('$package_name','$package_price','$start_date','$end_date');";
 
 $result = $conn->query($sql);

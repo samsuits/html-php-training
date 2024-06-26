@@ -1,6 +1,6 @@
 <?php
 include 'db-connection.php';
-$sql = 'select * from student';
+$sql = 'select * from users';
 $results = $conn->query($sql);
 ?>
 
@@ -10,7 +10,7 @@ $results = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student login</title>
+    <title>User login</title>
 </head>
 
 <body>
@@ -18,12 +18,7 @@ $results = $conn->query($sql);
         <tr>
             <th>id</th>
             <th>name</th>
-            <th>gender</th>
-            <th>semester</th>
-            <th>mobile</th>
-            <th>address</th>
-            <th>edit</th>
-            <th>delete</th>
+            <th>email</th>
         </tr>
 
 
@@ -33,12 +28,7 @@ $results = $conn->query($sql);
             echo '<tr>';
             echo '<td>' . $result['id'] . '</td>';
             echo '<td>' . $result['name'] . '</td>';
-            echo '<td>' . $result['gender'] . '</td>';
-            echo '<td>' . $result['semester'] . '</td>';
-            echo '<td>' . $result['mobile'] . '</td>';
-            echo '<td>' . $result['address'] . '</td>';
-            echo '<td><a href="#">Edit</a></td>';
-            echo '<td><a href="#">Delete</a></td>';
+            echo '<td>' . $result['email'] . '</td>';
             echo '</tr>';
         }
 
