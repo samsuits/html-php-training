@@ -18,6 +18,7 @@ $result = $conn->query($sql);
 if ($result == true)
 {
     echo '<h2> new payment details </h2>';
+    echo '<a href="login.html">Login</a>';
 
 }
 else

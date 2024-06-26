@@ -1,5 +1,13 @@
 <?php
+
+if (!isset($_COOKIE['user']))
+ {
+    echo 'Please login before accessing users page<br/>';
+    echo '<a href="login.html">Login</a><br/>';
+    exit(0);
+ }
 include 'db-connection.php';
+
 $sql = 'select * from payments';
 $results = $conn->query($sql);
 ?>

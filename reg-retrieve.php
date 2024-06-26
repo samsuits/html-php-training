@@ -18,10 +18,9 @@ $results = $conn->query($sql);
         <tr>
            
             <th>name</th>
-            <th>gender</th>
-            <th>semester</th>
-            <th>mobile</th>
-            <th>address</th>
+            <th>email</th>
+            <th>password</th>
+            <th>confirm_password</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -33,10 +32,9 @@ $results = $conn->query($sql);
             echo '<tr>';
            
             echo '<td>' . $result['name'] . '</td>';
-            echo '<td>' . $result['gender'] . '</td>';
-            echo '<td>' . $result['semester'] . '</td>';
-            echo '<td>' . $result['mobile'] . '</td>';
-            echo '<td>' . $result['address'] . '</td>';
+            echo '<td>' . $result['email'] . '</td>';
+            echo '<td>' . $result['password'] . '</td>';
+            echo '<td>' . $result['confirm_password'] . '</td>';
             echo '<td><a href="#">Edit</a></td>';
             echo '<td><a href="#">Delete</a></td>';
             echo '</tr>';

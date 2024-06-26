@@ -26,37 +26,16 @@
     <form action="registration.php" method="post">
     <div class="myClass">
         <h1><b>STUDENT REGISTRATION FORM</b></h1>
-        <label>Name:</label>
-        <input type="text" name="name">
+        <label>name:</label>
+        <input type="text" name="name"><br/><br/>
+        email: <input type="email" name="email"><br/><br/>
+        password: <input type="password" name="password"><br/><br/>
+        confirm_password:<input type="password" name="confirm_password"><br/><br/>
+        <input type="submit" name="submit" value="submit">
         </br>
+        
         </br>
-        <label>Gender:</label>
-        <input type="radio" name="gender">Male
-        <input type="radio" name="gender">Female
-        </br>
-        </br>
-        <label>Semester:</label>
-        <select name="semester">
-            <option value="1">1st</option>
-            <option value="2">2nd</option>
-            <option value="3">3rd</option>
-            <option value="4">4th</option>
-            <option value="5">5th</option>
-            <option value="6">6th</option>
-            <option value="7">7th</option>
-            <option value="8">8th</option>
-        </select>
-        </br>
-        </br>
-        <label>Mobile:</label>
-        <input type="tel" name="phone" required>
-        </br>
-        </br>
-        <label>Address:</label>
-        <input type="text" name="address">
-        </br>
-        </br>
-        <input type="submit" value="Submit">
+        
     </div>
 </form>
 </body>

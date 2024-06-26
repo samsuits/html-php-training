@@ -3,25 +3,42 @@
 // connection establishment
 include 'db-connection.php';
 
+//password matching
+$password = $_POST['password'];
+$confirm_password = $_POST['confirm_password'];
+
+if($password != $confirm_password)
+{
+    echo 'passwords do not match.please try again.';
+    echo '</br></br>';
+    echo '<a href="registration.html">Try Again</a>';
+    exit(0);
+}
 $name = $_POST['name'];
-$gender = $_POST['gender'];
-$semester = $_POST['semester'];
-$mobile = $_POST['phone'];
-$address = $_POST['address'];
+$email = $_POST['email'];
+
+
+//password hashing
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 $sql = "INSERT INTO
-        new_student
-        (name,gender,semester,mobile,address)
-        VALUES ('$name','$gender','$semester','$mobile','$address');";
+        users
+        (name,email,password)
+        VALUES ('$name','$email','$hashed_password');";
 
 $result = $conn->query($sql);
 
 if ($result == true)
 {
-    echo '<h2>New student created</h2>';
+    echo 'User successfully created.</br>';
+    echo '</br></br><a href="login.html">Login</a>';
 
 }
 else
 {
-    echo 'Error';
+    echo 'Error in user creation';
 }
+
+
+
+?>
