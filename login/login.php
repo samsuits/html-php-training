@@ -1,6 +1,7 @@
 <?php
+session_start();
 include 'db-connection.php';
-
+include 'visit-counter.php';
 $email    = $_POST['email'];
 $password = $_POST['password'];
 
@@ -18,8 +19,8 @@ if($result->num_rows > 0)
     {
         echo 'Login success!!';
         echo '<br/>Welcome<br/>';
-        setcookie('user', $email, time() + 3600);
-        echo '<a href="index.php">Home</a><br/>';
+        $_SESSION['user'] = $user['name'];
+        echo '<a href="index.php?login=true">Home</a><br/>';
     }
     else
     {

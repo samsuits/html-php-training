@@ -1,3 +1,7 @@
+<?php
+session_start();
+include 'utilities/visit-counter.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +12,15 @@
 <body>
      <!-- show login and registration to all users -->
     <?php
-        if (isset($_COOKIE['user']))
+        if (isset($_SESSION['user']))
         {
-            echo '<a href="registered-users.php">Users</a><br/>';
-            echo '<a href="logout.php">Logout</a><br/>';
+            echo '<a href="register/registered-users.php">Users</a><br/>';
+            echo '<a href="login/logout.php">Logout</a><br/>';
         }
         else
         {
-            echo '<a href="registration.html">Registration</a><br/>
-            <a href="login.html">Login</a><br/>';
+            echo '<a href="forms/registration.html">Registration</a><br/>
+            <a href="forms/login.html">Login</a><br/>';
         }
     ?>
 

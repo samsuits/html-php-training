@@ -1,3 +1,10 @@
+// 26th jun 2024
+
+create folders
+adjust code according to folders
+user session and cookies
+===============================
+
 
 // excerise for 21st jun
 // for all

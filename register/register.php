@@ -1,5 +1,5 @@
 <?php
-include 'db-connection.php';
+include '../database/db-connection.php';
 
 // match passwords
 $password         = $_POST['password'];
@@ -9,7 +9,7 @@ if ($password != $confirm_password)
 {
     echo 'Passwords do not match. Please try again.';
     echo '<br/><br/>';
-    echo '<a href="registration.html">Try again</a><br/>';
+    echo '<a href="../forms/registration.html">Try again</a><br/>';
     exit(0);
 }
 
